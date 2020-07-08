@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  color: #ffffff;
+  font-size: 16px; }
+
+main {
+  overflow: hidden; }
+
+p {
+  line-height: 24px; }
+
+.container {
+  padding: 90px 30px; }
+
+.services {
+  position: relative;
+  background-color: #233148; }
+  .services::after {
+    content: "";
+    opacity: 0.04;
+    top: -140px;
+    right: 0;
+    bottom: 120px;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-image: url("../icons/favicon_primary_white.svg"); }
+  .services__heading {
+    position: relative;
+    font-size: 32px;
+    font-weight: bold;
+    width: 70%; }
+    .services__heading::before {
+      content: "";
+      position: absolute;
+      background-color: #1f65d9;
+      width: 25px;
+      height: 10px;
+      top: -25px;
+      transform: skew(-3deg, -20deg); }
+  .services__icon {
+    width: 32px;
+    padding: 50px 0 15px; }
+  .services__sub-heading {
+    font-size: 22px;
+    font-weight: bold; }
+  .services__description {
+    color: #8796ae;
+    padding-top: 40px; }
+
+.lightPaper {
+  position: relative;
+  background-color: #1f65d9; }
+  .lightPaper__img {
+    position: absolute;
+    right: -178px;
+    bottom: 30px; }
+  .lightPaper__heading {
+    font-size: 22.4px;
+    font-weight: bold;
+    width: 59%;
+    padding-top: 110px; }
+  .lightPaper__description {
+    padding: 45px 0 0;
+    width: 59%; }
+  .lightPaper__button {
+    position: absolute;
+    bottom: -29px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fccf18;
+    padding: 22px 93px;
+    outline: none;
+    border: 0;
+    font-weight: bold;
+    color: #233148;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out; }
+    .lightPaper__button:hover {
+      background-color: #e0b818;
+      transform: translateY(4%); }
+
+.searchProduct {
+  color: #233148; }
+  .searchProduct__heading {
+    position: relative;
+    font-size: 30px;
+    font-weight: bold; }
+    .searchProduct__heading::before {
+      content: "";
+      position: absolute;
+      background-color: #1f65d9;
+      width: 25px;
+      height: 10px;
+      top: -25px;
+      transform: skew(-3deg, -20deg); }

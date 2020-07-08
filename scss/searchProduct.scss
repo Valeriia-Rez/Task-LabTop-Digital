@@ -1,0 +1,17 @@
+.searchProduct {
+  color: #233148;
+  &__heading {
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #1f65d9;
+      width: 25px;
+      height: 10px;
+      top: -25px;
+      transform: skew(-3deg, -20deg);
+    }
+  }
+}

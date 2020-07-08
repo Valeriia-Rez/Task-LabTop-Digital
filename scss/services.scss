@@ -1,0 +1,44 @@
+.services {
+  position: relative;
+  background-color: #233148;
+  &::after {
+    content: "";
+    opacity: 0.04;
+    top: -140px;
+    right: 0;
+    bottom: 120px;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-image: url("../icons/favicon_primary_white.svg");
+  }
+
+  &__heading {
+    position: relative;
+    font-size: 32px;
+    font-weight: bold;
+    width: 70%;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #1f65d9;
+      width: 25px;
+      height: 10px;
+      top: -25px;
+      transform: skew(-3deg, -20deg);
+    }
+  }
+  &__icon {
+    width: 32px;
+    padding: 50px 0 15px;
+  }
+  &__sub-heading {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  &__description {
+    color: #8796ae;
+    padding-top: 40px;
+  }
+}

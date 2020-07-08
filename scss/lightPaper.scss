@@ -1,0 +1,39 @@
+.lightPaper {
+  position: relative;
+  background-color: #1f65d9;
+  &__img {
+    position: absolute;
+    right: -178px;
+    bottom: 30px;
+  }
+  &__heading {
+    font-size: 22.4px;
+    font-weight: bold;
+    width: 59%;
+    padding-top: 110px;
+  }
+  &__description {
+    padding: 45px 0 0;
+    width: 59%;
+  }
+  &__button {
+    position: absolute;
+    bottom: -29px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fccf18;
+    padding: 22px 93px;
+    outline: none;
+    border: 0;
+    font-weight: bold;
+    color: #233148;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      background-color: #e0b818;
+      transform: translateY(4%);
+    }
+  }
+}
