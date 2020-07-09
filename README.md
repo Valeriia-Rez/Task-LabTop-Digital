@@ -1,9 +1,13 @@
-## Task fro LabTop Digital
+## Task for LabTop Digital
 
-## Run project
+## Install dependencies
 
-live-server
+npm install or yarn
 
 ## Compile project
 
 npm run compile:sass
+
+## Run project
+
+use live-server from your editor

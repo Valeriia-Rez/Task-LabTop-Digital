@@ -25,7 +25,7 @@
     font-size: 30px;
     width: 70%;
     padding-top: 40px;
-    font-family: "Proxima Nova Black", sans-serif;
+    font-family: $fontFamilyBlack;
     &::before {
       content: "";
       position: absolute;
@@ -58,7 +58,7 @@
 
   &__sub-heading {
     font-size: 22px;
-    font-family: "Proxima Nova Bold", sans-serif;
+    font-family: $fontFamilyBold;
     @media screen and(min-width:1440px) {
       font-size: 32px;
     }
@@ -70,7 +70,7 @@
   &__description {
     color: $colorGray;
     padding-top: 40px;
-    font-family: "Proxima Nova Light", sans-serif;
+    font-family: $fontFamilyLight;
     @media screen and (min-width: 1440px) {
       font-size: 18px;
       line-height: 28px;
