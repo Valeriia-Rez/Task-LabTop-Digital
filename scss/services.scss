@@ -1,6 +1,27 @@
+@font-face {
+  src: url("../fonts/ProximaNova-Black.otf") format("opentype");
+  font-family: "Proxima Nova Black";
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../fonts/ProximaNova-Bold.otf") format("opentype");
+  font-family: "Proxima Nova Bold";
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../fonts/ProximaNova-Light.otf") format("opentype");
+  font-family: "Proxima Nova Light";
+  font-weight: normal;
+  font-style: normal;
+}
+
 .services {
   position: relative;
-  background-color: #233148;
+  background-color: $colorDarkBlue;
   &::after {
     content: "";
     opacity: 0.02;
@@ -22,16 +43,17 @@
 
   &__heading {
     position: relative;
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 30px;
     width: 70%;
+    padding-top: 40px;
+    font-family: "Proxima Nova Black", sans-serif;
     &::before {
       content: "";
       position: absolute;
-      background-color: #1f65d9;
+      background-color: $colorBlue;
       width: 25px;
       height: 10px;
-      top: -25px;
+      top: 6px;
       transform: skew(-3deg, -20deg);
     }
     @media screen and (min-width: 1440px) {
@@ -43,6 +65,7 @@
       font-size: 56px;
     }
   }
+
   &__icon {
     width: 32px;
     padding: 50px 0 15px;
@@ -56,7 +79,7 @@
 
   &__sub-heading {
     font-size: 22px;
-    font-weight: bold;
+    font-family: "Proxima Nova Bold", sans-serif;
     @media screen and(min-width:1440px) {
       font-size: 32px;
     }
@@ -64,9 +87,11 @@
       font-size: 40px;
     }
   }
+
   &__description {
-    color: #8796ae;
+    color: $colorGray;
     padding-top: 40px;
+    font-family: "Proxima Nova Light", sans-serif;
     @media screen and (min-width: 1440px) {
       font-size: 18px;
       line-height: 28px;

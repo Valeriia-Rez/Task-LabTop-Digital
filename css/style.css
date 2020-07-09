@@ -19,11 +19,23 @@ p {
     .container {
       padding: 130px 135px 200px; } }
 
-.hidden {
-  opacity: 0; }
+@font-face {
+  src: url("../fonts/ProximaNova-Black.otf") format("opentype");
+  font-family: "Proxima Nova Black";
+  font-weight: normal;
+  font-style: normal; }
 
-.visible {
-  opacity: 1; }
+@font-face {
+  src: url("../fonts/ProximaNova-Bold.otf") format("opentype");
+  font-family: "Proxima Nova Bold";
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  src: url("../fonts/ProximaNova-Light.otf") format("opentype");
+  font-family: "Proxima Nova Light";
+  font-weight: normal;
+  font-style: normal; }
 
 .services {
   position: relative;
@@ -47,16 +59,17 @@ p {
         bottom: -10px; } }
   .services__heading {
     position: relative;
-    font-size: 32px;
-    font-weight: bold;
-    width: 70%; }
+    font-size: 30px;
+    width: 70%;
+    padding-top: 40px;
+    font-family: "Proxima Nova Black", sans-serif; }
     .services__heading::before {
       content: "";
       position: absolute;
       background-color: #1f65d9;
       width: 25px;
       height: 10px;
-      top: -25px;
+      top: 6px;
       transform: skew(-3deg, -20deg); }
     @media screen and (min-width: 1440px) {
       .services__heading {
@@ -77,7 +90,7 @@ p {
         width: 60px; } }
   .services__sub-heading {
     font-size: 22px;
-    font-weight: bold; }
+    font-family: "Proxima Nova Bold", sans-serif; }
     @media screen and (min-width: 1440px) {
       .services__sub-heading {
         font-size: 32px; } }
@@ -86,7 +99,8 @@ p {
         font-size: 40px; } }
   .services__description {
     color: #8796ae;
-    padding-top: 40px; }
+    padding-top: 40px;
+    font-family: "Proxima Nova Light", sans-serif; }
     @media screen and (min-width: 1440px) {
       .services__description {
         font-size: 18px;
@@ -107,9 +121,24 @@ p {
     .services__article {
       padding-left: 100px; } }
 
+@font-face {
+  src: url("../fonts/ProximaNova-Xbold.otf") format("opentype");
+  font-family: "Proxima Nova Extrabold";
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  src: url("../fonts/ProximaNova-Reg.otf") format("opentype");
+  font-family: "Proxima Nova Regular";
+  font-weight: normal;
+  font-style: normal; }
+
 .lightPaper {
   position: relative;
   background-color: #1f65d9; }
+  @media screen and (min-width: 1440px) {
+    .lightPaper {
+      width: 90.7%; } }
   .lightPaper::after {
     content: "";
     background-image: url("../img/docs.png");
@@ -117,30 +146,30 @@ p {
     left: 0;
     bottom: 0;
     background-size: cover;
-    width: 200px;
-    height: 215px; }
+    width: 195px;
+    height: 235px; }
     @media screen and (min-width: 1440px) {
       .lightPaper::after {
         left: 135px;
         width: 265px;
         height: 315px; } }
-  @media screen and (min-width: 1440px) {
-    .lightPaper {
-      width: 90.7%; } }
   .lightPaper__img {
     position: absolute;
     right: -178px;
-    bottom: 30px; }
+    bottom: 16px; }
+    @media screen and (min-width: 767px) {
+      .lightPaper__img {
+        bottom: -12px; } }
     @media screen and (min-width: 1440px) {
       .lightPaper__img {
-        right: -40px;
-        width: 60%;
-        top: -42px; } }
+        right: -47px;
+        width: 55%;
+        top: -80px; } }
   .lightPaper__heading {
-    font-size: 22.4px;
-    font-weight: bold;
+    font-family: "Proxima Nova Extrabold", sans-serif;
     width: 59%;
-    padding-top: 110px; }
+    padding-top: 80px;
+    font-size: 22.4px; }
     @media screen and (min-width: 1440px) {
       .lightPaper__heading {
         padding-top: 0;
@@ -150,24 +179,28 @@ p {
         font-size: 38px; } }
   .lightPaper__description {
     padding: 45px 0 0;
-    width: 59%; }
+    width: 59%;
+    font-family: "Proxima Nova Regular", sans-serif; }
     @media screen and (min-width: 1440px) {
       .lightPaper__description {
         font-size: 24px;
         line-height: 34px;
-        width: 50%; } }
+        width: 50%;
+        padding-left: 45px; } }
     @media screen and (min-width: 1920px) {
       .lightPaper__description {
         font-size: 28px; } }
   .lightPaper__button {
     position: absolute;
+    font-family: "Proxima Nova Regular", sans-serif;
+    font-size: 16px;
     bottom: -29px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
     background-color: #fccf18;
-    padding: 22px 93px;
+    padding: 18px 98px;
     outline: none;
     border: 0;
     font-weight: bold;
@@ -181,8 +214,9 @@ p {
       color: #ffffff; }
     @media screen and (min-width: 1440px) {
       .lightPaper__button {
-        padding: 20px 90px;
-        font-size: 32px;
+        padding: 20px 125px;
+        font-size: 24px;
+        line-height: 34px;
         margin-left: 230px;
         bottom: -40px; } }
   @media screen and (min-width: 1440px) {
@@ -190,10 +224,16 @@ p {
       display: flex; } }
   @media screen and (min-width: 1440px) {
     .lightPaper__article {
-      padding: 70px 135px 180px; } }
+      padding: 70px 135px 100px; } }
   @media screen and (min-width: 1920px) {
     .lightPaper__article {
       padding: 150px 135px 180px; } }
+
+@font-face {
+  src: url("../fonts/ProximaNova-Black.otf") format("opentype");
+  font-family: "Proxima Nova Black";
+  font-weight: normal;
+  font-style: normal; }
 
 .searchProduct {
   color: #233148; }
@@ -205,14 +245,15 @@ p {
   .searchProduct__heading {
     position: relative;
     font-size: 30px;
-    font-weight: bold; }
+    font-family: "Proxima Nova Black", sans-serif;
+    padding-top: 40px; }
     .searchProduct__heading::before {
       content: "";
       position: absolute;
       background-color: #1f65d9;
       width: 25px;
       height: 10px;
-      top: -25px;
+      top: 6px;
       transform: skew(-3deg, -20deg); }
     @media screen and (min-width: 1440px) {
       .searchProduct__heading {
