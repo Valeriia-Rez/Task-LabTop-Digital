@@ -1,5 +1,10 @@
 .searchProduct {
   color: #233148;
+  @media screen and(min-width:1440px) {
+    width: 50%;
+    margin-top: 40px;
+    padding-bottom: 170px;
+  }
   &__heading {
     position: relative;
     font-size: 30px;
@@ -12,6 +17,9 @@
       height: 10px;
       top: -25px;
       transform: skew(-3deg, -20deg);
+    }
+    @media screen and(min-width:1440px) {
+      font-size: 48px;
     }
   }
 }

@@ -3,7 +3,7 @@
   background-color: #233148;
   &::after {
     content: "";
-    opacity: 0.04;
+    opacity: 0.02;
     top: -140px;
     right: 0;
     bottom: 120px;
@@ -12,6 +12,12 @@
     background-position: center;
     position: absolute;
     background-image: url("../icons/favicon_primary_white.svg");
+    @media screen and (min-width: 768px) {
+      width: 50%;
+      margin: 0 auto;
+      top: -14px;
+      bottom: -10px;
+    }
   }
 
   &__heading {
@@ -28,17 +34,65 @@
       top: -25px;
       transform: skew(-3deg, -20deg);
     }
+    @media screen and (min-width: 1440px) {
+      width: 31%;
+      font-size: 48px;
+    }
+    @media screen and (min-width: 1920px) {
+      width: 26%;
+      font-size: 56px;
+    }
   }
   &__icon {
     width: 32px;
     padding: 50px 0 15px;
+    @media screen and (min-width: 1440px) {
+      width: 48px;
+    }
+    @media screen and (min-width: 1920px) {
+      width: 60px;
+    }
   }
+
   &__sub-heading {
     font-size: 22px;
     font-weight: bold;
+    @media screen and(min-width:1440px) {
+      font-size: 32px;
+    }
+    @media screen and(min-width:1920px) {
+      font-size: 40px;
+    }
   }
   &__description {
     color: #8796ae;
     padding-top: 40px;
+    @media screen and (min-width: 1440px) {
+      font-size: 18px;
+      line-height: 28px;
+      padding-top: 50px;
+    }
+    @media screen and(min-width:1920px) {
+      font-size: 28px;
+      line-height: 38px;
+    }
+  }
+
+  @media screen and(min-width:768px) {
+    &__block {
+      display: flex;
+    }
+    &__article {
+      padding-left: 25px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    &__block {
+      padding-top: 70px;
+    }
+    &__article {
+      padding-left: 100px;
+    }
   }
 }

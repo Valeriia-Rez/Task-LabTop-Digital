@@ -19,4 +19,14 @@ p {
 
 .container {
   padding: 90px 30px;
+  @media screen and (min-width: 1440px) {
+    padding: 130px 135px 200px;
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+.visible {
+  opacity: 1;
 }

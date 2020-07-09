@@ -15,13 +15,22 @@ p {
 
 .container {
   padding: 90px 30px; }
+  @media screen and (min-width: 1440px) {
+    .container {
+      padding: 130px 135px 200px; } }
+
+.hidden {
+  opacity: 0; }
+
+.visible {
+  opacity: 1; }
 
 .services {
   position: relative;
   background-color: #233148; }
   .services::after {
     content: "";
-    opacity: 0.04;
+    opacity: 0.02;
     top: -140px;
     right: 0;
     bottom: 120px;
@@ -30,6 +39,12 @@ p {
     background-position: center;
     position: absolute;
     background-image: url("../icons/favicon_primary_white.svg"); }
+    @media screen and (min-width: 768px) {
+      .services::after {
+        width: 50%;
+        margin: 0 auto;
+        top: -14px;
+        bottom: -10px; } }
   .services__heading {
     position: relative;
     font-size: 32px;
@@ -43,31 +58,107 @@ p {
       height: 10px;
       top: -25px;
       transform: skew(-3deg, -20deg); }
+    @media screen and (min-width: 1440px) {
+      .services__heading {
+        width: 31%;
+        font-size: 48px; } }
+    @media screen and (min-width: 1920px) {
+      .services__heading {
+        width: 26%;
+        font-size: 56px; } }
   .services__icon {
     width: 32px;
     padding: 50px 0 15px; }
+    @media screen and (min-width: 1440px) {
+      .services__icon {
+        width: 48px; } }
+    @media screen and (min-width: 1920px) {
+      .services__icon {
+        width: 60px; } }
   .services__sub-heading {
     font-size: 22px;
     font-weight: bold; }
+    @media screen and (min-width: 1440px) {
+      .services__sub-heading {
+        font-size: 32px; } }
+    @media screen and (min-width: 1920px) {
+      .services__sub-heading {
+        font-size: 40px; } }
   .services__description {
     color: #8796ae;
     padding-top: 40px; }
+    @media screen and (min-width: 1440px) {
+      .services__description {
+        font-size: 18px;
+        line-height: 28px;
+        padding-top: 50px; } }
+    @media screen and (min-width: 1920px) {
+      .services__description {
+        font-size: 28px;
+        line-height: 38px; } }
+  @media screen and (min-width: 768px) {
+    .services__block {
+      display: flex; }
+    .services__article {
+      padding-left: 25px; } }
+  @media screen and (min-width: 1440px) {
+    .services__block {
+      padding-top: 70px; }
+    .services__article {
+      padding-left: 100px; } }
 
 .lightPaper {
   position: relative;
   background-color: #1f65d9; }
+  .lightPaper::after {
+    content: "";
+    background-image: url("../img/docs.png");
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-size: cover;
+    width: 200px;
+    height: 215px; }
+    @media screen and (min-width: 1440px) {
+      .lightPaper::after {
+        left: 135px;
+        width: 265px;
+        height: 315px; } }
+  @media screen and (min-width: 1440px) {
+    .lightPaper {
+      width: 90.7%; } }
   .lightPaper__img {
     position: absolute;
     right: -178px;
     bottom: 30px; }
+    @media screen and (min-width: 1440px) {
+      .lightPaper__img {
+        right: -40px;
+        width: 60%;
+        top: -42px; } }
   .lightPaper__heading {
     font-size: 22.4px;
     font-weight: bold;
     width: 59%;
     padding-top: 110px; }
+    @media screen and (min-width: 1440px) {
+      .lightPaper__heading {
+        padding-top: 0;
+        font-size: 32px; } }
+    @media screen and (min-width: 1920px) {
+      .lightPaper__heading {
+        font-size: 38px; } }
   .lightPaper__description {
     padding: 45px 0 0;
     width: 59%; }
+    @media screen and (min-width: 1440px) {
+      .lightPaper__description {
+        font-size: 24px;
+        line-height: 34px;
+        width: 50%; } }
+    @media screen and (min-width: 1920px) {
+      .lightPaper__description {
+        font-size: 28px; } }
   .lightPaper__button {
     position: absolute;
     bottom: -29px;
@@ -82,13 +173,35 @@ p {
     font-weight: bold;
     color: #233148;
     cursor: pointer;
-    transition: all 0.5s ease-in-out; }
+    transition: all 0.5s ease-in-out;
+    z-index: 1; }
     .lightPaper__button:hover {
-      background-color: #e0b818;
-      transform: translateY(4%); }
+      transform: translateY(4%);
+      background-image: linear-gradient(to right, #fccf18, #d48a1a);
+      color: #ffffff; }
+    @media screen and (min-width: 1440px) {
+      .lightPaper__button {
+        padding: 20px 90px;
+        font-size: 32px;
+        margin-left: 230px;
+        bottom: -40px; } }
+  @media screen and (min-width: 1440px) {
+    .lightPaper__text {
+      display: flex; } }
+  @media screen and (min-width: 1440px) {
+    .lightPaper__article {
+      padding: 70px 135px 180px; } }
+  @media screen and (min-width: 1920px) {
+    .lightPaper__article {
+      padding: 150px 135px 180px; } }
 
 .searchProduct {
   color: #233148; }
+  @media screen and (min-width: 1440px) {
+    .searchProduct {
+      width: 50%;
+      margin-top: 40px;
+      padding-bottom: 170px; } }
   .searchProduct__heading {
     position: relative;
     font-size: 30px;
@@ -101,3 +214,6 @@ p {
       height: 10px;
       top: -25px;
       transform: skew(-3deg, -20deg); }
+    @media screen and (min-width: 1440px) {
+      .searchProduct__heading {
+        font-size: 48px; } }
