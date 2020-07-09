@@ -1,24 +1,3 @@
-@font-face {
-  src: url("../fonts/ProximaNova-Black.otf") format("opentype");
-  font-family: "Proxima Nova Black";
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  src: url("../fonts/ProximaNova-Bold.otf") format("opentype");
-  font-family: "Proxima Nova Bold";
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  src: url("../fonts/ProximaNova-Light.otf") format("opentype");
-  font-family: "Proxima Nova Light";
-  font-weight: normal;
-  font-style: normal;
-}
-
 .services {
   position: relative;
   background-color: $colorDarkBlue;
@@ -32,7 +11,7 @@
     background-size: cover;
     background-position: center;
     position: absolute;
-    background-image: url("../icons/favicon_primary_white.svg");
+    background-image: url("../assets/icons/favicon_primary_white.svg");
     @media screen and (min-width: 768px) {
       width: 50%;
       margin: 0 auto;
@@ -61,7 +40,7 @@
       font-size: 48px;
     }
     @media screen and (min-width: 1920px) {
-      width: 26%;
+      width: 36%;
       font-size: 56px;
     }
   }

@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>Task</title>
   </head>
@@ -15,16 +12,32 @@
     <main>
       <section class="services">
         <div class="container">
-          <h1 class="services__heading">SOMETHING AS A SERVICE</h1>
+          <h1
+            class="services__heading"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            SOMETHING AS A SERVICE
+          </h1>
           <div class="services__block">
             <article class="services__article">
               <img
-                src="icons/icon1.svg"
+                src="./assets/icons/icon1.svg"
                 alt="digital stamp"
                 class="services__icon"
               />
-              <h3 class="services__sub-heading">Digital Identity</h3>
-              <p class="services__description">
+              <h3
+                class="services__sub-heading"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                Digital Identity
+              </h3>
+              <p
+                class="services__description"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
                 consectetur, soluta quisquam nemo voluptates delectus at tenetur
                 explicabo.
@@ -32,27 +45,47 @@
             </article>
             <article class="services__article">
               <img
-                src="icons/icon2.svg"
+                src="./assets/icons/icon2.svg"
                 alt="trust score"
                 class="services__icon"
               />
-              <h3 class="services__sub-heading">Trust Score</h3>
-              <p class="services__description">
+              <h3
+                class="services__sub-heading"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                Trust Score
+              </h3>
+              <p
+                class="services__description"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
                 consectetur, soluta quisquam nemo voluptates delectus at tenetur
                 explicabo.
               </p>
             </article>
           </div>
-          <div class="services__block wow fadeInUp" data-wow-offset="200">
+          <div class="services__block">
             <article class="services__article">
               <img
-                src="icons/icon3.svg"
+                src="./assets/icons/icon3.svg"
                 alt="search engine"
                 class="services__icon"
               />
-              <h3 class="services__sub-heading">Search engine</h3>
-              <p class="services__description">
+              <h3
+                class="services__sub-heading"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                Search engine
+              </h3>
+              <p
+                class="services__description"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
                 consectetur, soluta quisquam nemo voluptates delectus at tenetur
                 explicabo.
@@ -60,12 +93,22 @@
             </article>
             <article class="services__article">
               <img
-                src="icons/icon4.svg"
+                src="./assets/icons/icon4.svg"
                 alt="user friendly"
                 class="services__icon"
               />
-              <h3 class="services__sub-heading">User friendly</h3>
-              <p class="services__description">
+              <h3
+                class="services__sub-heading"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                User friendly
+              </h3>
+              <p
+                class="services__description"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
                 consectetur, soluta quisquam nemo voluptates delectus at tenetur
                 explicabo.
@@ -75,21 +118,27 @@
         </div>
       </section>
       <section class="lightPaper">
-        <img src="./img/broshure.png" alt="broshure" class="lightPaper__img" />
+        <img
+          src="./assets/img/broshure.png"
+          alt="broshure"
+          class="lightPaper__img"
+        />
         <article class="container lightPaper__article">
           <div class="lightPaper__text">
             <div>
               <h2
-                class="lightPaper__heading wow fadeInUp"
-                data-wow-offset="200"
+                class="lightPaper__heading"
+                data-aos="fade-up"
+                data-aos-duration="2000"
               >
                 OUR LIGHTPAPER
               </h2>
             </div>
             <div>
               <p
-                class="lightPaper__description wow fadeInUp"
-                data-wow-offset="200"
+                class="lightPaper__description"
+                data-aos="fade-up"
+                data-aos-duration="2000"
               >
                 Team is currently working on all its documents.
               </p>
@@ -101,15 +150,19 @@
         </article>
       </section>
       <section class="searchProduct container">
-        <h2 class="searchProduct__heading">
+        <h2
+          class="searchProduct__heading"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           SOMETHING SEARCH PRODUCT
         </h2>
       </section>
     </main>
 
-    <script src="js/wow.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      new WOW().init();
+      AOS.init();
     </script>
   </body>
 </html>
